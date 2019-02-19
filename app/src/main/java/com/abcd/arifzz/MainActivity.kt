@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         val btnmul = findViewById(R.id.button3) as Button
         val btndiv = findViewById(R.id.button4) as Button
 
-//below is the function for button add
+
         btnadd.setOnClickListener {
             val a: String = edt1.text.toString()
             val b: String = edt2.text.toString()
@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                 result.setText(e.toString())
             }
         }
-//below is the function for button substract
+
         btnsub.setOnClickListener {
             if (edt1.text.isEmpty() || edt2.text.isEmpty()) {
                 Toast.makeText(applicationContext, "Enter the Value", Toast.LENGTH_SHORT).show()
